@@ -1,0 +1,157 @@
+.contact {
+  margin-top: 40px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  margin: 10px 40px 30px;
+  align-self: flex-start;
+}
+
+.contact-info h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.contact-item {
+  margin-bottom: 15px;
+}
+
+.contact-item h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.contact-item a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.map {
+  border: 0;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.form-description {
+  text-align: center;
+  width: 60%;
+  font-size: 20px;
+  margin: 10px 0 20px;
+}
+
+.formContactPage {
+  padding: 27px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formContactPage form{
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  max-width: 600px;
+  align-self: center;
+  align-items: flex-start;
+}
+
+.formContactPage label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.formContactPage input {
+  width: 460px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formContactPage textarea {
+  width: 460px;
+  height: 120px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.formContactPage button {
+  width: 460px;
+  background: #5C3A21;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.formContactPage button:hover {
+  background: #7b5535;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin-top: 20px;
+  }
+
+  .contact-info h1 {
+    margin-bottom: 20px;
+  }
+
+  .contact-info  {
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .formContactPage{
+    width: 90%;
+  }
+
+  .formContactPage form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+  }
+
+  .formContactPage input{
+    width: 100%;
+  }
+  
+  .formContactPage textarea {
+    width: 100%;
+    height: 120px;
+  }
+  .formContactPage button {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .form-description {
+    width: 90%;
+    font-size: 18px;
+  }
+  .map {
+    width: 90%; 
+  }
+  .map iframe {
+    width: 100%; 
+  }
+}
