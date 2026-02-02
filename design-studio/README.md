@@ -2,7 +2,7 @@
 
 ## Opis projektu
 
-**Design Studio** to aplikacja webowa wspierająca działalność studia projektowania wnętrz. System umożliwia zarządzanie klientami, projektami, statusami realizacji oraz spotkaniami. Aplikacja została zaprojektowana w architekturze klient–serwer z wykorzystaniem React oraz Node.js, a dane przechowywane są w relacyjnej bazie danych MySQL.
+**Design Studio** to aplikacja webowa wspierająca działalność studia projektowania wnętrz. System umożliwia zarządzanie klientami, projektami oraz spotkaniami. Aplikacja została zaprojektowana w architekturze klient–serwer z wykorzystaniem React oraz Node.js, a dane przechowywane są w relacyjnej bazie danych MySQL.
 
 ---
 
@@ -59,7 +59,8 @@ Aplikacja frontendowa uruchomi się pod adresem:
 http://localhost:3000
 
 #### Backend (Node.js)
-Serwer znajduje się w folderze `src`:
+Serwer znajduje się w folderze `src` i **musi być uruchomiony w osobnym oknie terminala**.
+W nowym oknie terminala przejdź do folderu serwera i uruchom backend:
 ```bash
 cd src
 npm install
@@ -74,7 +75,7 @@ Do projektu dołączony jest plik backupu:
 Przywracanie bazy danych w MySQL Workbench:
 - otwórz **MySQL Workbench**
 - połącz się z lokalnym serwerem MySQL
-- wybierz **Server** → **Data Import**
+- wybierz **Server** -> **Data Import**
 - zaznacz **Import from Self-Contained File**
 - wskaż plik `design-studio-database.sql`
 - wybierz istniejący schemat lub utwórz nowy
