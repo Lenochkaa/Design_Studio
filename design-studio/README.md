@@ -2,10 +2,7 @@
 
 ## Opis projektu
 
-**Design Studio** to aplikacja webowa wspierająca działalność studia projektowania wnętrz.  
-System umożliwia zarządzanie klientami, projektami, statusami realizacji oraz spotkaniami.  
-Aplikacja została zaprojektowana w architekturze klient–serwer z wykorzystaniem React oraz Node.js,  
-a dane przechowywane są w relacyjnej bazie danych MySQL.
+**Design Studio** to aplikacja webowa wspierająca działalność studia projektowania wnętrz. System umożliwia zarządzanie klientami, projektami, statusami realizacji oraz spotkaniami. Aplikacja została zaprojektowana w architekturze klient–serwer z wykorzystaniem React oraz Node.js, a dane przechowywane są w relacyjnej bazie danych MySQL.
 
 ---
 
@@ -40,8 +37,8 @@ https://dev.mysql.com/downloads/mysql/
 
 Podczas instalacji zapamiętaj:
 
--użytkownika (np. root)
--hasło do bazy danych
+- użytkownika (np. root)
+- hasło do bazy danych
 
 ### 3. MySQL Workbench
 
