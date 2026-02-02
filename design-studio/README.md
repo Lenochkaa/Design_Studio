@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Design Studio – aplikacja webowa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Opis projektu
 
-## Available Scripts
+**Design Studio** to aplikacja webowa wspierająca działalność studia projektowania wnętrz.  
+System umożliwia zarządzanie klientami, projektami, statusami realizacji oraz spotkaniami.  
+Aplikacja została zaprojektowana w architekturze klient–serwer z wykorzystaniem React oraz Node.js,  
+a dane przechowywane są w relacyjnej bazie danych MySQL.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Technologie
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Frontend: React
+- Backend: Node.js (Express.js)
+- Baza danych: MySQL
+- Zarządzanie bazą danych: MySQL Workbench
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Wymagania systemowe
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Aby uruchomić aplikację na nowym komputerze, należy zainstalować:
 
-### `npm run build`
+### 1. Node.js (z npm)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Pobierz i zainstaluj wersję LTS:  
+https://nodejs.org
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Sprawdzenie instalacji:
+```bash
+node -v
+npm -v
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. MySQL Server
 
-### `npm run eject`
+Pobierz i zainstaluj MySQL Server:
+https://dev.mysql.com/downloads/mysql/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Podczas instalacji zapamiętaj:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-użytkownika (np. root)
+-hasło do bazy danych
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. MySQL Workbench
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Pobierz i zainstaluj MySQL Workbench:
+https://dev.mysql.com/downloads/workbench/
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Uruchomienie aplikacji
+#### Frontend (React)
+Przejdź do folderu z aplikacją frontendową:
+```bash
+cd design-studio
+npm install
+npm start
+```
+Aplikacja frontendowa uruchomi się pod adresem:
+http://localhost:3000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Backend (Node.js)
+Serwer znajduje się w folderze `src`:
+```bash
+cd src
+npm install
+node server.js
+```
 
-### Code Splitting
+#### Przywracanie bazy danych (backup)
+Do projektu dołączony jest plik backupu:
+`design-studio-database.sql`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Przywracanie bazy danych w MySQL Workbench:
+- otwórz **MySQL Workbench**
+- połącz się z lokalnym serwerem MySQL
+- wybierz **Server** → **Data Import**
+- zaznacz **Import from Self-Contained File**
+- Wskaż plik `design-studio-database.sql`
+- wybierz istniejący schemat lub utwórz nowy
+- kliknij **Start Import**
+Po zakończeniu importu baza danych będzie gotowa do użycia.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Uwagi końcowe
+MySQL Server musi być uruchomiony przed startem backendu
+Dane dostępowe do bazy danych muszą być zgodne z konfiguracją w pliku `server.js`
+Frontend i backend muszą działać jednocześnie
