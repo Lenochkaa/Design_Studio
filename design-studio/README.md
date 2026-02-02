@@ -1,4 +1,4 @@
-# Design Studio – aplikacja webowa
+# Design Studio - aplikacja webowa
 
 ## Opis projektu
 
