@@ -76,9 +76,10 @@ Przywracanie bazy danych w MySQL Workbench:
 - połącz się z lokalnym serwerem MySQL
 - wybierz **Server** → **Data Import**
 - zaznacz **Import from Self-Contained File**
-- Wskaż plik `design-studio-database.sql`
+- wskaż plik `design-studio-database.sql`
 - wybierz istniejący schemat lub utwórz nowy
 - kliknij **Start Import**
+  
 Po zakończeniu importu baza danych będzie gotowa do użycia.
 
 ---
