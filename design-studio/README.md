@@ -83,7 +83,7 @@ Po zakończeniu importu baza danych będzie gotowa do użycia.
 
 ---
 
-## Uwagi końcowe
-MySQL Server musi być uruchomiony przed startem backendu
-Dane dostępowe do bazy danych muszą być zgodne z konfiguracją w pliku `server.js`
-Frontend i backend muszą działać jednocześnie
+## Uwagi końcowe:
+- MySQL Server musi być uruchomiony przed startem backendu,
+- dane dostępowe do bazy danych muszą być zgodne z konfiguracją w pliku `server.js`,
+- frontend i backend muszą działać jednocześnie.
